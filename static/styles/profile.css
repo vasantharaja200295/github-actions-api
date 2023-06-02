@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    height:100vh;
+    width: 100%;
+    background:
+    linear-gradient(135deg,#0000 18.75%,#ffffff 0 31.25%,#0000 0),
+    repeating-linear-gradient(45deg,#ffffff -6.25% 6.25%,#e3e3e3 0 18.75%);
+    background-size: 38px 38px;
+
+}
+
+.Container{
+    height: 80%;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 22.5px 6px #e7e7e7;
+    -moz-box-shadow: 0 0 22.5px 6px #e7e7e7;
+    box-shadow: 0 0 22.5px 6px #e7e7e7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+.formContainer{
+    width: auto;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input{
+    width:250px;
+    height: 45px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    font-size: 16px;
+    font-family: 'Satoshi';
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+input:focus{
+    outline-color: #7d8094;
+    -webkit-box-shadow: 3px 3px 10px -3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px -3px #dddddd;
+    box-shadow: 3px 3px 10px -3px #dddddd;
+}
+
+.authkeys{
+    width:800px;
+    padding:10px;
+    font-size:18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

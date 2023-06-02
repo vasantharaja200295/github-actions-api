@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/styles/register.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,501,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="mainContainer">
+            <div class="leftsection">
+            </div>
+            <div class="rightsection">
+                <h1>Github Actions</h1>
+                <h2>Login</h2>
+                <div class="formContainer">
+                    <form action="/register" method="POST">
+                        <div class="loginItem">
+                            <label for="username">User Name:</label><br>
+                            <input type="text" name="username">
+                        </div>
+                        <div class="loginItem">
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="loginItem">
+                            <label for="conform_password">Confirm Password:</label><br>
+                            <input type="password" name="conform_password">
+                        </div>
+                        <p class="output">{{op}}</p>
+                        <button type="submit">Register</button>
+                        <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"> Login here</a></p>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

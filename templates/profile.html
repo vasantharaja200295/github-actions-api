@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,501,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/profile.css">
+</head>
+<body>
+    <section>
+        <div class="Container">
+            <h1>Github Actions Api</h1>
+            <h2>Welcome {{user_data.get('username')}}</h2>
+            <h3>API key: {{user_data.get('api_key')}}</h3>
+            <div class="formContainer">
+                <form action="/profile/{{user_data.get('user_id')}}" method="post">
+                    Github Access Key: 
+                    <input type="text" name="authkey" id="">
+                    Expiry Date: 
+                    <input type="text" name="expiry" id="">
+                    <button type="submit">add</button>
+                </form>
+            </div>
+            <h2>Github Auth Keys:</h2>
+            <div class="authkeys">
+               <p>{{user_data.get('github_key')}}</p>
+               <p>Expires on: {{user_data.get('expiry')}}</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

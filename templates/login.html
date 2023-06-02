@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/styles/login.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,501,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <div class="mainContainer">
+            <div class="leftsection">
+            </div>
+            <div class="rightsection">
+                <h1>Github Actions</h1>
+                <h2>Login</h2>
+                <div class="formContainer">
+                    <form action="/login" method="POST">
+                        <div class="loginItem">
+                            <label for="username">User Name:</label><br>
+                            <input type="text" name="username">
+                        </div>
+                        <div class="loginItem">
+                            <label for="pwd">Password:</label><br>
+                            <input type="password" name="password">
+                        </div>
+                        <p class="output">{{op}}</p>
+                        <button type="submit">Login</button>
+                        <p class="bottom">Don't have an account?  <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
